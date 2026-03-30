@@ -4,14 +4,14 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative mt-20 min-h-[calc(100vh-5rem)] flex items-center overflow-hidden bg-emerald-900">
       <div className="absolute inset-0 z-0">
         <img
           alt="People collaborating"
-          className="w-full h-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0hX4cFz5hIz5VVAY1HW-VMKlFz_flZ2K2jnhNweRGJH_1VsxdM6sHvOfL4O5vK0YnFJ2UKhGI8F5JuPlLVg0QS1hJEktu9nQ-l-NKa67LyBNEesCKEEH4qPxSm9IXw5zd0Q3J65sgPNGrp6SwlP68IULkXXROx5FZ4xw8V6CH-omS_XMsyvrlZ4euzBuZxudSKWflhFdzUjZgXYQgDDowiLJicJUxxBIMXrfHRNxp6v05LrRSxDyvULrBNpUyXXgAwtBLR71zCirA"
+          className="w-full h-full object-cover object-top"
+          src="/assets/people_collaborating.png"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-900/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/80 via-emerald-900/50 to-emerald-900/30" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
