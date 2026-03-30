@@ -4,13 +4,13 @@
     "aboutUs": "Nosotros",
     "services": "Servicios",
     "contact": "Contactos",
-    "becomeMember": "Hazte Socio"
+    "becomeMember": "Hacete Socio"
   },
   "hero": {
     "badge": "Tu Bienestar, Nuestro Compromiso",
     "title1": "Cooperativa",
     "title2": "Ysateños",
-    "description": "Construyendo un futuro sólido y solidario para nuestra comunidad. Descubre el respaldo de una institución que valora tu esfuerzo.",
+    "description": "Construyendo un futuro sólido y solidario para nuestra comunidad. Descubrí el respaldo de una institución que valora tu esfuerzo.",
     "cta": "Más información",
     "ctaSecondary": "Nuestros Servicios"
   },
@@ -26,15 +26,11 @@
     "label": "Sobre Nosotros",
     "title": "El Santuario Arquitectónico de sus Finanzas",
     "description1": "En <strong>Ysateños</strong>, entendemos que la estabilidad financiera es la base de la tranquilidad familiar. No somos solo una cooperativa; somos una comunidad comprometida con el crecimiento mutuo.",
-    "description2": "Nuestra misión es brindar soluciones financieras integrales bajo el principio de solidaridad, asegurando que cada socio cuente con el respaldo necesario para sus proyectos de vida, desde la educación hasta la vivienda propia.",
-    "yearsValue": "+25",
-    "yearsLabel": "Años de Trayectoria",
-    "membersValue": "+10k",
-    "membersLabel": "Socios Activos"
+    "description2": "Nuestra misión es brindar soluciones financieras integrales bajo el principio de solidaridad, asegurando que cada socio cuente con el respaldo necesario para sus proyectos de vida, desde la educación hasta la vivienda propia."
   },
   "services": {
     "title": "Nuestros Servicios",
-    "subtitle": "Diseñados para cubrir cada etapa de tu vida con la seguridad que te mereces.",
+    "subtitle": "Diseñados para cubrir cada etapa de tu vida con la seguridad que te merecés.",
     "savingsTitle": "Ahorro",
     "savingsText": "Planes de ahorro programado con las tasas más competitivas del mercado cooperativo.",
     "savingsItem1": "Ahorro a la Vista",

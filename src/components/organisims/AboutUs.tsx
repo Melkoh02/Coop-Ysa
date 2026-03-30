@@ -31,24 +31,6 @@ export default function AboutUs() {
               <p>{t('about.description2')}</p>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-8">
-              <div>
-                <div className="text-3xl font-headline font-bold text-primary mb-1">
-                  {t('about.yearsValue')}
-                </div>
-                <div className="text-sm font-label uppercase tracking-wider text-outline">
-                  {t('about.yearsLabel')}
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-headline font-bold text-primary mb-1">
-                  {t('about.membersValue')}
-                </div>
-                <div className="text-sm font-label uppercase tracking-wider text-outline">
-                  {t('about.membersLabel')}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

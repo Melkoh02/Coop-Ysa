@@ -16,7 +16,7 @@ function ServiceCard({
   return (
     <div className="group relative bg-white p-1 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
       <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <div className="relative bg-white p-8 rounded-xl h-full transition-transform duration-300 group-hover:-translate-y-1">
+      <div className="relative bg-white p-8 rounded-xl h-full transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
         <div className="w-12 h-12 mb-8 bg-surface-container-low rounded-lg flex items-center justify-center text-primary group-hover:bg-primary-fixed group-hover:text-on-primary-fixed transition-colors">
           <span className="material-symbols-outlined filled">{icon}</span>
         </div>
