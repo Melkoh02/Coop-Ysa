@@ -1,62 +1,50 @@
-import * as React from 'react';
-import { Box, Card, CardContent, Grid, Stack, Typography } from '@mui/material';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import SavingsOutlinedIcon from '@mui/icons-material/SavingsOutlined';
-import SportsSoccerOutlinedIcon from '@mui/icons-material/SportsSoccerOutlined';
 import { useTranslation } from 'react-i18next';
-
-import {
-  CARD_BORDER,
-  GREEN,
-  SOFT_SHADOW,
-  TEXT_MUTED,
-} from '../../lib/constants/home';
 
 function ServiceCard({
   icon,
   title,
   text,
+  items,
+  cta,
 }: {
-  icon: React.ReactNode;
+  icon: string;
   title: string;
   text: string;
+  items: string[];
+  cta: string;
 }) {
   return (
-    <Grid size={{ xs: 12, md: 4 }}>
-      <Card
-        variant="outlined"
-        sx={{
-          height: '100%',
-          borderColor: CARD_BORDER,
-          borderRadius: 2.5,
-          boxShadow: 'none',
-          transition: 'box-shadow .2s ease, transform .2s ease',
-          '&:hover': { boxShadow: SOFT_SHADOW, transform: 'translateY(-2px)' },
-        }}>
-        <CardContent sx={{ p: 3 }}>
-          <Stack spacing={2} alignItems="center">
-            <Box
-              sx={{
-                width: 52,
-                height: 52,
-                borderRadius: '12px',
-                border: '1px solid ' + CARD_BORDER,
-                display: 'grid',
-                placeItems: 'center',
-                color: GREEN,
-              }}>
-              {icon}
-            </Box>
-            <Typography variant="h6" fontWeight={800}>
-              {title}
-            </Typography>
-            <Typography variant="body2" sx={{ color: TEXT_MUTED }}>
-              {text}
-            </Typography>
-          </Stack>
-        </CardContent>
-      </Card>
-    </Grid>
+    <div className="group relative bg-white p-1 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="relative bg-white p-8 rounded-xl h-full transition-transform duration-300 group-hover:-translate-y-1">
+        <div className="w-12 h-12 mb-8 bg-surface-container-low rounded-lg flex items-center justify-center text-primary group-hover:bg-primary-fixed group-hover:text-on-primary-fixed transition-colors">
+          <span className="material-symbols-outlined filled">{icon}</span>
+        </div>
+
+        <h3 className="text-2xl font-headline font-bold mb-4 text-on-surface">
+          {title}
+        </h3>
+        <p className="text-on-surface-variant mb-6">{text}</p>
+
+        <ul className="space-y-3 mb-8 text-sm font-medium text-outline">
+          {items.map((item) => (
+            <li key={item} className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-sm text-primary">
+                check_circle
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <a
+          className="inline-flex items-center text-primary font-bold hover:gap-2 transition-all"
+          href="#">
+          {cta}{' '}
+          <span className="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+    </div>
   );
 }
 
@@ -64,36 +52,53 @@ export default function Services() {
   const { t } = useTranslation();
 
   return (
-    <Box
-      id="servicios"
-      sx={{
-        px: { xs: 3, md: 6 },
-        py: { xs: 6, md: 8 },
-        borderTop: '1px solid ' + CARD_BORDER,
-        borderBottom: '1px solid ' + CARD_BORDER,
-        bgcolor: '#fff',
-      }}>
-      <Typography variant="h5" fontWeight={800} sx={{ mb: 4 }}>
-        {t('services.title')}
-      </Typography>
+    <section className="py-32 bg-surface px-6" id="servicios">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl font-headline font-extrabold text-primary mb-4">
+            {t('services.title')}
+          </h2>
+          <p className="text-on-surface-variant max-w-2xl mx-auto">
+            {t('services.subtitle')}
+          </p>
+        </div>
 
-      <Grid container spacing={3}>
-        <ServiceCard
-          icon={<SavingsOutlinedIcon />}
-          title={t('services.savingsTitle')}
-          text={t('services.savingsText')}
-        />
-        <ServiceCard
-          icon={<HomeOutlinedIcon />}
-          title={t('services.creditTitle')}
-          text={t('services.creditText')}
-        />
-        <ServiceCard
-          icon={<SportsSoccerOutlinedIcon />}
-          title={t('services.sportsTitle')}
-          text={t('services.sportsText')}
-        />
-      </Grid>
-    </Box>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <ServiceCard
+            icon="savings"
+            title={t('services.savingsTitle')}
+            text={t('services.savingsText')}
+            items={[
+              t('services.savingsItem1'),
+              t('services.savingsItem2'),
+              t('services.savingsItem3'),
+            ]}
+            cta={t('services.savingsCta')}
+          />
+          <ServiceCard
+            icon="payments"
+            title={t('services.creditTitle')}
+            text={t('services.creditText')}
+            items={[
+              t('services.creditItem1'),
+              t('services.creditItem2'),
+              t('services.creditItem3'),
+            ]}
+            cta={t('services.creditCta')}
+          />
+          <ServiceCard
+            icon="sports_soccer"
+            title={t('services.sportsTitle')}
+            text={t('services.sportsText')}
+            items={[
+              t('services.sportsItem1'),
+              t('services.sportsItem2'),
+              t('services.sportsItem3'),
+            ]}
+            cta={t('services.sportsCta')}
+          />
+        </div>
+      </div>
+    </section>
   );
 }

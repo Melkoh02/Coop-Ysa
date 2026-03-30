@@ -1,83 +1,44 @@
-import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import {
-  CARD_BORDER,
-  GREEN,
-  GREEN_DARK,
-  TEXT_MUTED,
-} from '../../lib/constants/home';
 
 export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <Box
-      sx={{
-        px: { xs: 3, md: 6 },
-        py: { xs: 6, md: 8 },
-        borderBottom: '1px solid ' + CARD_BORDER,
-      }}>
-      <Grid container spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
-        <Grid size={{ xs: 12, md: 6 }}>
-          <Box
-            sx={{
-              width: '100%',
-              maxWidth: { md: 520 },
-              ml: { md: 'auto' },
-              borderRadius: 2,
-              overflow: 'hidden',
-            }}>
-            <Box
-              component="img"
-              src="https://media.istockphoto.com/id/1424987910/photo/coworkers-with-stacked-hands-at-the-office.jpg?s=612x612&w=0&k=20&c=VRcFD0Im7myc70YBar1YLBSPL-CtYzenVyd4XRhloQ8="
-              sx={{
-                display: 'block',
-                width: '100%',
-                height: { xs: 220, md: 340 },
-                objectFit: 'cover',
-              }}
-            />
-          </Box>
-        </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
-          <Stack spacing={{ xs: 3, md: 4 }}>
-            <Typography
-              component="h1"
-              sx={{
-                fontWeight: 800,
-                lineHeight: 1.1,
-                letterSpacing: '-0.02em',
-                fontSize: { xs: 34, md: 44 },
-              }}>
-              {t('hero.title1')}
-              <br />
-              {t('hero.title2')}
-            </Typography>
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img
+          alt="People collaborating"
+          className="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0hX4cFz5hIz5VVAY1HW-VMKlFz_flZ2K2jnhNweRGJH_1VsxdM6sHvOfL4O5vK0YnFJ2UKhGI8F5JuPlLVg0QS1hJEktu9nQ-l-NKa67LyBNEesCKEEH4qPxSm9IXw5zd0Q3J65sgPNGrp6SwlP68IULkXXROx5FZ4xw8V6CH-omS_XMsyvrlZ4euzBuZxudSKWflhFdzUjZgXYQgDDowiLJicJUxxBIMXrfHRNxp6v05LrRSxDyvULrBNpUyXXgAwtBLR71zCirA"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-900/60 to-transparent" />
+      </div>
 
-            <Typography
-              variant="body1"
-              sx={{ color: TEXT_MUTED, maxWidth: 420 }}>
-              {t('hero.description')}
-            </Typography>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+        <div className="max-w-2xl asymmetric-gap">
+          <span className="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase mb-6 rounded-full">
+            {t('hero.badge')}
+          </span>
 
-            <Button
-              size="large"
-              variant="contained"
-              disableElevation
-              sx={{
-                width: 'fit-content',
-                textTransform: 'none',
-                bgcolor: GREEN,
-                '&:hover': { bgcolor: GREEN_DARK },
-                borderRadius: 1.5,
-                px: 3,
-                py: 1.25,
-              }}>
+          <h1 className="text-5xl md:text-7xl font-headline font-extrabold text-white mb-8 leading-[1.1] tracking-tighter">
+            {t('hero.title1')} <br />
+            <span className="text-primary-fixed">{t('hero.title2')}</span>
+          </h1>
+
+          <p className="text-lg text-emerald-50/80 mb-10 max-w-lg leading-relaxed font-body">
+            {t('hero.description')}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded-md font-headline font-bold text-lg hover:bg-white transition-all active:scale-95">
               {t('hero.cta')}
-            </Button>
-          </Stack>
-        </Grid>
-      </Grid>
-    </Box>
+            </button>
+            <button className="border border-white/30 text-white backdrop-blur-md px-8 py-4 rounded-md font-headline font-bold text-lg hover:bg-white/10 transition-all">
+              {t('hero.ctaSecondary')}
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

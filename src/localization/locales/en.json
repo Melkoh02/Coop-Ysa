@@ -3,34 +3,72 @@
     "home": "Home",
     "aboutUs": "About Us",
     "services": "Services",
-    "contactUs": "Contact Us"
+    "contact": "Contact",
+    "becomeMember": "Become a Member"
   },
   "hero": {
+    "badge": "Your Well-being, Our Commitment",
     "title1": "Cooperativa",
     "title2": "Ysateños",
-    "description": "Our mission is to promote the well-being of our members through accessible financial solutions and community development.",
-    "cta": "Learn more"
+    "description": "Building a strong and supportive future for our community. Discover the backing of an institution that values your effort.",
+    "cta": "Learn more",
+    "ctaSecondary": "Our Services"
+  },
+  "values": {
+    "solidarityTitle": "Solidarity",
+    "solidarityText": "The fundamental pillar that unites us to overcome challenges and achieve collective goals that benefit everyone.",
+    "productionTitle": "Production",
+    "productionText": "We foster the economic development of our members through strategic financial tools.",
+    "educationTitle": "Education",
+    "educationText": "Continuous training to empower our community with financial and technical knowledge."
   },
   "about": {
-    "title": "About Us",
-    "description": "Born from the solidarity spirit of alumni of Colegio Ysaty, our cooperative drives the economic and social development of its community and all those who share the values of collaboration and mutual growth.",
-    "solidarityTitle": "Solidarity",
-    "solidarityText": "Concrete actions that strengthen the community.",
-    "productionTitle": "Production",
-    "productionText": "Responsible products and fair rates.",
-    "educationTitle": "Education",
-    "educationText": "Workshops and content to improve financial health."
+    "label": "About Us",
+    "title": "The Architectural Sanctuary of Your Finances",
+    "description1": "At <strong>Ysateños</strong>, we understand that financial stability is the foundation of family peace of mind. We are not just a cooperative; we are a community committed to mutual growth.",
+    "description2": "Our mission is to provide comprehensive financial solutions under the principle of solidarity, ensuring that every member has the necessary support for their life projects, from education to homeownership.",
+    "yearsValue": "+25",
+    "yearsLabel": "Years of Experience",
+    "membersValue": "+10k",
+    "membersLabel": "Active Members"
   },
   "services": {
     "title": "Our Services",
+    "subtitle": "Designed to cover every stage of your life with the security you deserve.",
     "savingsTitle": "Savings",
-    "savingsText": "Flexible and secure options for your goals.",
+    "savingsText": "Scheduled savings plans with the most competitive rates in the cooperative market.",
+    "savingsItem1": "Demand Savings",
+    "savingsItem2": "Fixed Term",
+    "savingsItem3": "Youth Savings",
+    "savingsCta": "View details",
     "creditTitle": "Credit",
-    "creditText": "Responsible financing for your growth.",
+    "creditText": "Flexible financing adapted to your personal or business needs.",
+    "creditItem1": "Personal Loans",
+    "creditItem2": "Microfinance",
+    "creditItem3": "Education Credit",
+    "creditCta": "Apply now",
     "sportsTitle": "Sports",
-    "sportsText": "Sports activities for the well-being and integration of our members."
+    "sportsText": "Physical and social well-being for the whole family through our sports schools.",
+    "sportsItem1": "Football School",
+    "sportsItem2": "Annual Tournaments",
+    "sportsItem3": "Our Gym",
+    "sportsCta": "Learn more"
   },
-  "contact": {
-    "copyright": "©Copyright. All rights reserved."
+  "trustBanner": {
+    "title": "Ready to join our family?",
+    "subtitle": "Become a member today and start enjoying all the exclusive benefits.",
+    "cta": "Apply for Membership"
+  },
+  "footer": {
+    "description": "Committed to the comprehensive development of members and their community through mutual aid.",
+    "quickLinks": "Quick Links",
+    "faq": "FAQ",
+    "contactTitle": "Contact",
+    "address": "Avda. La Victoria c/ Avda. Fernando de la Mora, Barrio San Pablo, Asunción - Paraguay",
+    "email": "coopysatenhos.captaciones@gmail.com",
+    "phone": "+595 981 114 671 (WhatsApp)",
+    "schedule": "Mon - Fri: 08:00 - 17:00",
+    "scheduleSat": "Sat: 08:00 - 12:00",
+    "copyright": "© 2024 Ysateños Financial Cooperative. The Architectural Sanctuary of Your Finances."
   }
 }

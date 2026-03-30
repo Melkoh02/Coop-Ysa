@@ -3,34 +3,72 @@
     "home": "Inicio",
     "aboutUs": "Nosotros",
     "services": "Servicios",
-    "contactUs": "Contáctanos"
+    "contact": "Contactos",
+    "becomeMember": "Hazte Socio"
   },
   "hero": {
+    "badge": "Tu Bienestar, Nuestro Compromiso",
     "title1": "Cooperativa",
     "title2": "Ysateños",
-    "description": "Nuestra misión es impulsar el bienestar de nuestros socios a través de soluciones financieras accesibles y el desarrollo de la comunidad.",
-    "cta": "Más información"
+    "description": "Construyendo un futuro sólido y solidario para nuestra comunidad. Descubre el respaldo de una institución que valora tu esfuerzo.",
+    "cta": "Más información",
+    "ctaSecondary": "Nuestros Servicios"
+  },
+  "values": {
+    "solidarityTitle": "Solidaridad",
+    "solidarityText": "El pilar fundamental que nos une para superar desafíos y alcanzar metas colectivas que beneficien a todos.",
+    "productionTitle": "Producción",
+    "productionText": "Fomentamos el desarrollo económico de nuestros socios a través de herramientas financieras estratégicas.",
+    "educationTitle": "Educación",
+    "educationText": "Capacitación continua para empoderar a nuestra comunidad con conocimientos financieros y técnicos."
   },
   "about": {
-    "title": "Sobre nosotros",
-    "description": "Nacida del espíritu solidario de exalumnos del Colegio Ysaty, nuestra cooperativa impulsa el desarrollo económico y social de su comunidad y de todos aquellos que comparten los valores de colaboración y crecimiento mutuo.",
-    "solidarityTitle": "Solidaridad",
-    "solidarityText": "Acciones concretas que fortalecen a la comunidad.",
-    "productionTitle": "Producción",
-    "productionText": "Productos responsables y tasas justas.",
-    "educationTitle": "Educación",
-    "educationText": "Talleres y contenidos para mejorar la salud financiera."
+    "label": "Sobre Nosotros",
+    "title": "El Santuario Arquitectónico de sus Finanzas",
+    "description1": "En <strong>Ysateños</strong>, entendemos que la estabilidad financiera es la base de la tranquilidad familiar. No somos solo una cooperativa; somos una comunidad comprometida con el crecimiento mutuo.",
+    "description2": "Nuestra misión es brindar soluciones financieras integrales bajo el principio de solidaridad, asegurando que cada socio cuente con el respaldo necesario para sus proyectos de vida, desde la educación hasta la vivienda propia.",
+    "yearsValue": "+25",
+    "yearsLabel": "Años de Trayectoria",
+    "membersValue": "+10k",
+    "membersLabel": "Socios Activos"
   },
   "services": {
-    "title": "Nuestros servicios",
+    "title": "Nuestros Servicios",
+    "subtitle": "Diseñados para cubrir cada etapa de tu vida con la seguridad que te mereces.",
     "savingsTitle": "Ahorro",
-    "savingsText": "Opciones flexibles y seguras para tus metas.",
+    "savingsText": "Planes de ahorro programado con las tasas más competitivas del mercado cooperativo.",
+    "savingsItem1": "Ahorro a la Vista",
+    "savingsItem2": "Plazo Fijo",
+    "savingsItem3": "Ahorro Infanto-Juvenil",
+    "savingsCta": "Ver detalles",
     "creditTitle": "Crédito",
-    "creditText": "Financiamiento responsable para tu crecimiento.",
+    "creditText": "Financiamiento flexible adaptado a tus necesidades personales o empresariales.",
+    "creditItem1": "Créditos Personales",
+    "creditItem2": "Microfinanzas",
+    "creditItem3": "Crédito Educativo",
+    "creditCta": "Solicitar ahora",
     "sportsTitle": "Deportes",
-    "sportsText": "Actividades deportivas para el bienestar y la integración de nuestros socios."
+    "sportsText": "Bienestar físico y social para toda la familia a través de nuestras escuelas deportivas.",
+    "sportsItem1": "Escuela de Fútbol",
+    "sportsItem2": "Torneos Anuales",
+    "sportsItem3": "Gimnasio Propio",
+    "sportsCta": "Saber más"
   },
-  "contact": {
-    "copyright": "©Copyright. Todos los derechos reservados."
+  "trustBanner": {
+    "title": "¿Listo para unirte a nuestra familia?",
+    "subtitle": "Hacete socio hoy y empezá a disfrutar de todos los beneficios exclusivos.",
+    "cta": "Solicitar Membresía"
+  },
+  "footer": {
+    "description": "Comprometidos con el desarrollo integral del socio y su comunidad a través de la ayuda mutua.",
+    "quickLinks": "Enlaces Rápidos",
+    "faq": "Preguntas Frecuentes",
+    "contactTitle": "Contacto",
+    "address": "Avda. La Victoria c/ Avda. Fernando de la Mora, Barrio San Pablo, Asunción - Paraguay",
+    "email": "coopysatenhos.captaciones@gmail.com",
+    "phone": "+595 981 114 671 (WhatsApp)",
+    "schedule": "Lun - Vie: 08:00 - 17:00",
+    "scheduleSat": "Sáb: 08:00 - 12:00",
+    "copyright": "© 2024 Ysateños Financial Cooperative. El Santuario Arquitectónico de sus Finanzas."
   }
 }
