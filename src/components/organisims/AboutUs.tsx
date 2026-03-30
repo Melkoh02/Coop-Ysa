@@ -3,12 +3,13 @@ import { Box, Grid, Stack, Typography } from '@mui/material';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import { useTranslation } from 'react-i18next';
 import {
   CARD_BORDER,
   GREEN,
   SOFT_SHADOW,
   TEXT_MUTED,
-} from '../../lib/constants/home.ts';
+} from '../../lib/constants/home';
 
 function Feature({
   icon,
@@ -47,11 +48,13 @@ function Feature({
   );
 }
 
-const AboutUs = () => {
+export default function AboutUs() {
+  const { t } = useTranslation();
+
   return (
     <Box id="nosotros" sx={{ px: { xs: 3, md: 6 }, py: { xs: 6, md: 8 } }}>
       <Typography variant="h5" fontWeight={800} sx={{ mb: 4 }}>
-        Sobre nosotros
+        {t('about.title')}
       </Typography>
 
       <Grid container spacing={{ xs: 4, md: 6 }} alignItems="center">
@@ -68,7 +71,7 @@ const AboutUs = () => {
             }}>
             <Box
               component="img"
-              alt="Reunión de equipo"
+              alt={t('about.title')}
               src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=900&auto=format&fit=crop"
               sx={{
                 display: 'block',
@@ -84,32 +87,29 @@ const AboutUs = () => {
           <Typography
             variant="body1"
             sx={{ color: TEXT_MUTED, mb: 4, maxWidth: 640 }}>
-            Nacida del espíritu solidario de exalumnos del Colegio Ysaty,
-            nuestra cooperativa impulsa el desarrollo económico y social de su
-            comunidad y de todos aquellos que comparten los valores de
-            colaboración y crecimiento mutuo.
+            {t('about.description')}
           </Typography>
 
           <Grid container spacing={3}>
             <Grid size={{ xs: 12, md: 4 }}>
               <Feature
                 icon={<Groups2OutlinedIcon fontSize="large" />}
-                title="Solidaridad"
-                text="Acciones concretas que fortalecen a la comunidad."
+                title={t('about.solidarityTitle')}
+                text={t('about.solidarityText')}
               />
             </Grid>
             <Grid size={{ xs: 12, md: 4 }}>
               <Feature
                 icon={<HomeOutlinedIcon fontSize="large" />}
-                title="Produccion"
-                text="Productos responsables y tasas justas."
+                title={t('about.productionTitle')}
+                text={t('about.productionText')}
               />
             </Grid>
             <Grid size={{ xs: 12, md: 4 }}>
               <Feature
                 icon={<SchoolOutlinedIcon fontSize="large" />}
-                title="Educación"
-                text="Talleres y contenidos para mejorar la salud financiera."
+                title={t('about.educationTitle')}
+                text={t('about.educationText')}
               />
             </Grid>
           </Grid>
@@ -117,6 +117,4 @@ const AboutUs = () => {
       </Grid>
     </Box>
   );
-};
-
-export default AboutUs;
+}

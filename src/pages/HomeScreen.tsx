@@ -9,19 +9,22 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material';
-import Hero from '../components/organisims/Hero.tsx';
-import AboutUs from '../components/organisims/AboutUs.tsx';
-import Services from '../components/organisims/Services.tsx';
-import ContactInfo from '../components/organisims/ContactInfo.tsx';
+import { useTranslation } from 'react-i18next';
+import Hero from '../components/organisims/Hero';
+import AboutUs from '../components/organisims/AboutUs';
+import Services from '../components/organisims/Services';
+import ContactInfo from '../components/organisims/ContactInfo';
 import {
   CARD_BORDER,
   GREEN,
   GREEN_DARK,
   SOFT_SHADOW,
-} from '../lib/constants/home.ts';
-import { pub } from '../lib/helpers.ts';
+} from '../lib/constants/home';
+import { pub } from '../lib/helpers';
 
 export default function HomeScreen() {
+  const { t } = useTranslation();
+
   return (
     <Box sx={{ bgcolor: '#f6f7f8', minHeight: '100vh', minWidth: '100vw' }}>
       {/* Top bar */}
@@ -65,9 +68,9 @@ export default function HomeScreen() {
               direction="row"
               spacing={3}
               sx={{ display: { xs: 'none', sm: 'flex' } }}>
-              <HeaderLink href="#">Inicio</HeaderLink>
-              <HeaderLink href="#nosotros">Nosotros</HeaderLink>
-              <HeaderLink href="#servicios">Servicios</HeaderLink>
+              <HeaderLink href="#">{t('nav.home')}</HeaderLink>
+              <HeaderLink href="#nosotros">{t('nav.aboutUs')}</HeaderLink>
+              <HeaderLink href="#servicios">{t('nav.services')}</HeaderLink>
             </Stack>
 
             <Button
@@ -82,13 +85,13 @@ export default function HomeScreen() {
                 bgcolor: GREEN,
                 '&:hover': { bgcolor: GREEN_DARK },
               }}>
-              Contáctanos
+              {t('nav.contactUs')}
             </Button>
           </Toolbar>
         </Container>
       </Paper>
 
-      {/* Page container with “card” look */}
+      {/* Page container with "card" look */}
       <Container maxWidth="lg" sx={{ py: { xs: 4, md: 6 } }}>
         <Paper
           elevation={0}

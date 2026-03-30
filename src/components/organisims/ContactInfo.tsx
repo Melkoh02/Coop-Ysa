@@ -11,12 +11,13 @@ import {
 import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
+import { useTranslation } from 'react-i18next';
 import {
   CARD_BORDER,
   GREEN,
   GREEN_DARK,
   TEXT_MUTED,
-} from '../../lib/constants/home.ts';
+} from '../../lib/constants/home';
 
 function ContactItem({
   icon,
@@ -56,7 +57,9 @@ function ContactItem({
   );
 }
 
-const ContactInfo = () => {
+export default function ContactInfo() {
+  const { t } = useTranslation();
+
   return (
     <Box
       id="contacto"
@@ -125,10 +128,8 @@ const ContactInfo = () => {
           color: TEXT_MUTED,
           justifyContent: 'center',
         }}>
-        ©Copyright. Todos los derechos reservados.
+        {t('contact.copyright')}
       </Typography>
     </Box>
   );
-};
-
-export default ContactInfo;
+}

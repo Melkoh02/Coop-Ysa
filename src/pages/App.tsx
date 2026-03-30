@@ -1,10 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { observer } from 'mobx-react-lite';
 import AppRoutes from '../routes/routes';
-import { lightTheme } from '../themes/light.ts';
+import { lightTheme } from '../themes/light';
 
-const App = observer(function App() {
+export default function App() {
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
@@ -13,6 +12,4 @@ const App = observer(function App() {
       </BrowserRouter>
     </ThemeProvider>
   );
-});
-
-export default App;
+}

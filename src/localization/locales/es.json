@@ -1,63 +1,36 @@
 {
- "appName": "M003",
- "greeting": "¡Bienvenido, {{name}}!",
- "common": {
-  "cancel": "Cancelar",
-  "confirm": "Confirmar",
-  "yes": "Si",
-  "no": "No",
-  "continue": "Continuar",
-  "search": "Buscar"
- },
- "login": {
-  "title": "Ingresar",
-  "loginButton": "Ingresar",
-  "email": "Correo",
-  "emailPlaceholder": "Correo",
-  "password": "Contraseña",
-  "passwordPlaceholder": "Contraseña",
-  "forgotPassword": "Olvidaste tu contraseña?",
-  "noAccount": "No tienes una cuenta aun?",
-  "continueAsGuest": "Continuar como invitado"
- },
- "signUp": {
-  "title": "Registrarse",
-  "signUpButton": "Registrarse",
-  "email": "Correo",
-  "password": "Contraseña",
-  "passwordPlaceholder": "Password",
-  "confirmPassword": "Confirmar Contraseña",
-  "confirmPasswordPlaceholder": "Confirmar Contraseña",
-  "backToLogin": "Ya tienes una cuenta?"
- },
- "forgotPassword": {
-  "title": "Recuperar Contraseña",
-  "email": "Correo",
-  "submitButton": "Enviar link de recuperacion",
-  "backToLogin": "Voler a"
- },
- "home": {
-  "title": "Pantalla de Inicio",
-  "welcome": "Bienvenidos a M003"
- },
- "settings": {
-  "title": "Pantalla de Configuraciones",
-  "language": "Idioma",
-  "switchLanguage": "Cambiar Idioma",
-  "toggleTheme": "Cambiar Tema",
-  "logout": "Cerrar Sesion"
- },
- "modals": {
-  "userAccount": {
-   "title": "M001"
+  "nav": {
+    "home": "Inicio",
+    "aboutUs": "Nosotros",
+    "services": "Servicios",
+    "contactUs": "Contáctanos"
   },
-  "selectLanguageModal": {
-   "title": "Seleccionar Idioma",
-   "placeholder": "Seleccionar Idioma",
-   "languages": {
-    "en": "Inglés",
-    "es": "Español"
-   }
+  "hero": {
+    "title1": "Cooperativa",
+    "title2": "Ysateños",
+    "description": "Nuestra misión es impulsar el bienestar de nuestros socios a través de soluciones financieras accesibles y el desarrollo de la comunidad.",
+    "cta": "Más información"
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "description": "Nacida del espíritu solidario de exalumnos del Colegio Ysaty, nuestra cooperativa impulsa el desarrollo económico y social de su comunidad y de todos aquellos que comparten los valores de colaboración y crecimiento mutuo.",
+    "solidarityTitle": "Solidaridad",
+    "solidarityText": "Acciones concretas que fortalecen a la comunidad.",
+    "productionTitle": "Producción",
+    "productionText": "Productos responsables y tasas justas.",
+    "educationTitle": "Educación",
+    "educationText": "Talleres y contenidos para mejorar la salud financiera."
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "savingsTitle": "Ahorro",
+    "savingsText": "Opciones flexibles y seguras para tus metas.",
+    "creditTitle": "Crédito",
+    "creditText": "Financiamiento responsable para tu crecimiento.",
+    "sportsTitle": "Deportes",
+    "sportsText": "Actividades deportivas para el bienestar y la integración de nuestros socios."
+  },
+  "contact": {
+    "copyright": "©Copyright. Todos los derechos reservados."
   }
- }
 }

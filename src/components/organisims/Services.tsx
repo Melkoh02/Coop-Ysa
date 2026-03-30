@@ -3,13 +3,14 @@ import { Box, Card, CardContent, Grid, Stack, Typography } from '@mui/material';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SavingsOutlinedIcon from '@mui/icons-material/SavingsOutlined';
 import SportsSoccerOutlinedIcon from '@mui/icons-material/SportsSoccerOutlined';
+import { useTranslation } from 'react-i18next';
 
 import {
   CARD_BORDER,
   GREEN,
   SOFT_SHADOW,
   TEXT_MUTED,
-} from '../../lib/constants/home.ts';
+} from '../../lib/constants/home';
 
 function ServiceCard({
   icon,
@@ -59,7 +60,9 @@ function ServiceCard({
   );
 }
 
-const Services = () => {
+export default function Services() {
+  const { t } = useTranslation();
+
   return (
     <Box
       id="servicios"
@@ -71,28 +74,26 @@ const Services = () => {
         bgcolor: '#fff',
       }}>
       <Typography variant="h5" fontWeight={800} sx={{ mb: 4 }}>
-        Nuestros servicios
+        {t('services.title')}
       </Typography>
 
       <Grid container spacing={3}>
         <ServiceCard
           icon={<SavingsOutlinedIcon />}
-          title="Ahorro"
-          text="Opciones flexibles y seguras para tus metas."
+          title={t('services.savingsTitle')}
+          text={t('services.savingsText')}
         />
         <ServiceCard
           icon={<HomeOutlinedIcon />}
-          title="Crédito"
-          text="Financiamiento responsable para tu crecimiento."
+          title={t('services.creditTitle')}
+          text={t('services.creditText')}
         />
         <ServiceCard
           icon={<SportsSoccerOutlinedIcon />}
-          title="Deportes"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "
+          title={t('services.sportsTitle')}
+          text={t('services.sportsText')}
         />
       </Grid>
     </Box>
   );
-};
-
-export default Services;
+}

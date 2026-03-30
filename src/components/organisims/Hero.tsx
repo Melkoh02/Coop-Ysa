@@ -1,13 +1,15 @@
 import { Box, Button, Grid, Stack, Typography } from '@mui/material';
-import * as React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   CARD_BORDER,
   GREEN,
   GREEN_DARK,
   TEXT_MUTED,
-} from '../../lib/constants/home.ts';
+} from '../../lib/constants/home';
 
-const Hero = () => {
+export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <Box
       sx={{
@@ -28,7 +30,6 @@ const Hero = () => {
             <Box
               component="img"
               src="https://media.istockphoto.com/id/1424987910/photo/coworkers-with-stacked-hands-at-the-office.jpg?s=612x612&w=0&k=20&c=VRcFD0Im7myc70YBar1YLBSPL-CtYzenVyd4XRhloQ8="
-              // src={'/assets/logo.jpeg'}
               sx={{
                 display: 'block',
                 width: '100%',
@@ -48,17 +49,15 @@ const Hero = () => {
                 letterSpacing: '-0.02em',
                 fontSize: { xs: 34, md: 44 },
               }}>
-              Cooperativa
+              {t('hero.title1')}
               <br />
-              Ysateños
+              {t('hero.title2')}
             </Typography>
 
             <Typography
               variant="body1"
               sx={{ color: TEXT_MUTED, maxWidth: 420 }}>
-              Nuestra misión es impulsar el bienestar de nuestros socios a
-              través de soluciones financieras accesibles y el desarrollo de la
-              comunidad.
+              {t('hero.description')}
             </Typography>
 
             <Button
@@ -74,13 +73,11 @@ const Hero = () => {
                 px: 3,
                 py: 1.25,
               }}>
-              Más información
+              {t('hero.cta')}
             </Button>
           </Stack>
         </Grid>
       </Grid>
     </Box>
   );
-};
-
-export default Hero;
+}

@@ -1,62 +1,36 @@
 {
- "appName": "M003",
- "greeting": "Welcome, {{name}}!",
- "common": {
-  "cancel": "Cancel",
-  "confirm": "Confirm",
-  "yes": "Yes",
-  "no": "No",
-  "continue": "Continue",
-  "search": "Search"
- },
- "login": {
-  "title": "Login",
-  "loginButton": "Log in",
-  "email": "Email",
-  "emailPlaceholder": "Email",
-  "password": "Password",
-  "passwordPlaceholder": "Password",
-  "forgotPassword": "Forgot password?",
-  "noAccount": "Don't have an account?",
-  "continueAsGuest": "Continue as Guest"
- },
- "signUp": {
-  "title": "Sign Up",
-  "signUpButton": "Sign Up",
-  "email": "Email",
-  "password": "Password",
-  "confirmPassword": "Confirm Password",
-  "confirmPasswordPlaceholder": "Confirm Password",
-  "backToLogin": "Already have an account?"
- },
- "forgotPassword": {
-  "title": "Reset Password",
-  "email": "Email",
-  "submitButton": "Send reset link",
-  "backToLogin": "Back to"
- },
- "home": {
-  "title": "Home Screen",
-  "welcome": "Welcome to M003"
- },
- "settings": {
-  "title": "Settings Screen",
-  "language": "Language",
-  "switchLanguage": "Switch Language",
-  "toggleTheme": "Toggle Theme",
-  "logout": "Log Out"
- },
- "modals": {
-  "userAccount": {
-   "title": "M001"
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contactUs": "Contact Us"
   },
-  "selectLanguageModal": {
-   "title": "Select Language",
-   "placeholder": "Select Language",
-   "languages": {
-    "en": "English",
-    "es": "Spanish"
-   }
+  "hero": {
+    "title1": "Cooperativa",
+    "title2": "Ysateños",
+    "description": "Our mission is to promote the well-being of our members through accessible financial solutions and community development.",
+    "cta": "Learn more"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Born from the solidarity spirit of alumni of Colegio Ysaty, our cooperative drives the economic and social development of its community and all those who share the values of collaboration and mutual growth.",
+    "solidarityTitle": "Solidarity",
+    "solidarityText": "Concrete actions that strengthen the community.",
+    "productionTitle": "Production",
+    "productionText": "Responsible products and fair rates.",
+    "educationTitle": "Education",
+    "educationText": "Workshops and content to improve financial health."
+  },
+  "services": {
+    "title": "Our Services",
+    "savingsTitle": "Savings",
+    "savingsText": "Flexible and secure options for your goals.",
+    "creditTitle": "Credit",
+    "creditText": "Responsible financing for your growth.",
+    "sportsTitle": "Sports",
+    "sportsText": "Sports activities for the well-being and integration of our members."
+  },
+  "contact": {
+    "copyright": "©Copyright. All rights reserved."
   }
- }
 }
