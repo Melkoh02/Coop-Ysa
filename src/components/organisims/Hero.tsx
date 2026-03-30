@@ -16,9 +16,6 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
         <div className="max-w-2xl asymmetric-gap">
-          <span className="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase mb-6 rounded-full">
-            {t('hero.badge')}
-          </span>
 
           <h1 className="text-5xl md:text-7xl font-headline font-extrabold text-white mb-8 leading-[1.1] tracking-tighter">
             {t('hero.title1')} <br />

@@ -14,7 +14,7 @@ const languageDetector: LanguageDetectorModule = {
   type: 'languageDetector',
 
   detect: () => {
-    let selected = 'en';
+    let selected = 'es';
     try {
       const stored = localStorage.getItem(LANG_KEY);
       if (stored) {
@@ -24,7 +24,7 @@ const languageDetector: LanguageDetectorModule = {
         const match = locales.find(l =>
           Object.keys(resources).includes(l.split('-')[0]),
         );
-        selected = match?.split('-')[0] ?? 'en';
+        selected = match?.split('-')[0] ?? 'es';
       }
     } catch {
       /* noop */
@@ -51,7 +51,7 @@ void i18n
   .init(
     {
       resources,
-      fallbackLng: 'en',
+      fallbackLng: 'es',
       react: { useSuspense: false },
     },
     () => {
